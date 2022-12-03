@@ -73,6 +73,12 @@ public class OrderItem implements Serializable{
 		return Objects.hash(id);
 	}
 
+	//MÉTODOS
+	
+	public Double getSubtotal() {
+		return price * quantity;
+	}
+		
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
